@@ -16,16 +16,18 @@ def main():
     fileLog = open("/home/lorenzo/PycharmProjects/LogViewer/LogViewer.log", "a")
     fileLog.write("\n" + str(datetime.date.today()) + " - Starting the script\n")
     f1 = file.readlines()
-
+    oldRequest = ""
     while 1:
         where = file.tell()
         line = file.readline()
         if "OK DOWNLOAD" in line:
             fileLog.write(str(datetime.datetime.now()) + " RECEIVED REQUEST: -" + line + "\n")
             request = Request.Request(line)
-            fileLog.write(str(datetime.datetime.now()) + " PARSED REQUEST: -" + str(request) + "\n")
-            print("PARSED REQUEST: " + str(request))
-            updateDatabase(request)
+            if str(request) != oldRequest:
+                fileLog.write(str(datetime.datetime.now()) + " PARSED REQUEST: -" + str(request) + "\n")
+                print("PARSED REQUEST: " + str(request))
+                updateDatabase(request)
+                oldRequest = str(request)
         if not line:
             time.sleep(5)
             file.seek(where)
