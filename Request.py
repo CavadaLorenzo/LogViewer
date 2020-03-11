@@ -1,5 +1,5 @@
 import datetime
-
+import json
 
 class Request:
     def __init__(self, request):
@@ -9,17 +9,16 @@ class Request:
         self.file = req[3]  # file path requested from the client
         self.host = req[1]  # ip of the client
         self.date = self.parseDate(req[0])  # date and hour when the request has been processed
+        self.reqJson = self.getJson(self.file, self.host, self.date)
 
     # the date needs an elaboration to get a normal format (datetime)
     def parseDate(self, req):
         # the output will be a list like this: ["day in words", "month in words", "empty", "day in number", "hh:mm:ss", "year", "other stuff like pid or username"]
         req = req.split(" ")
-
         # here will be build a date in this format: year, month (in number), day (in number)
-        date = [req[5], self.month(req[1]), req[3]]
+        date = [req[4], self.getMonth(req[1]), req[2]]
         # here will be build an hour in this format: hh, mm, ss
-        hour = req[4].split(":")
-
+        hour = req[3].split(":")
         # converting date and hour from string to int
         date = list(map(int, date))
         hour = list(map(int, hour))
@@ -30,7 +29,7 @@ class Request:
         return reqDate
 
     # vsftpd log saves the month like string and not as number so we use a dictionary to change it
-    def month(self, i):
+    def getMonth(self, i):
         switcher = {
             "Jan": 1,
             "Feb": 2,
@@ -48,4 +47,7 @@ class Request:
         return switcher.get(i, "Invalid day of week")
 
     def __str__(self):
-        return self.host + " - " + str(self.date) + " - " + self.file
+        return json.dumps(self.reqJson, indent=4, sort_keys=True, default=str)
+
+    def getJson(self, filePath, hostIp, date):
+        return {"filePath": filePath, "hostIp": hostIp, "date": date}
