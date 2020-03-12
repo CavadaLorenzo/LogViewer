@@ -1,6 +1,7 @@
 import Request
 import time
 import datetime
+from datetime import timedelta
 from influxdb import InfluxDBClient
 
 def updateDatabase(req):
@@ -16,18 +17,18 @@ def main():
     fileLog = open("/home/lorenzo/PycharmProjects/LogViewer/LogViewer.log", "a")
     fileLog.write("\n" + str(datetime.date.today()) + " - Starting the script\n")
     f1 = file.readlines()
-    oldRequest = ""
+    oldRequest = Request.Request()
     while 1:
         where = file.tell()
         line = file.readline()
         if "OK DOWNLOAD" in line:
             fileLog.write(str(datetime.datetime.now()) + " RECEIVED REQUEST: -" + line + "\n")
             request = Request.Request(line)
-            if str(request) != oldRequest:
+            if request.reqJson["filePath"] != oldRequest.reqJson["filePath"] or request.reqJson["date"] > (oldRequest.reqJson["date"] + timedelta(seconds=10)):
                 fileLog.write(str(datetime.datetime.now()) + " PARSED REQUEST: -" + str(request) + "\n")
                 print("PARSED REQUEST: " + str(request))
                 updateDatabase(request)
-                oldRequest = str(request)
+                oldRequest = request
         if not line:
             time.sleep(5)
             file.seek(where)
