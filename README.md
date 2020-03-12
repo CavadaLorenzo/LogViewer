@@ -1,5 +1,6 @@
 # LogViewer
 
+###V1.0
 Simply python script which read in real time a vsftpd log (default position */var/log/vsftpd.log*).
 
 A vsftpd log line has this format
