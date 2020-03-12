@@ -2,30 +2,21 @@ import datetime
 import json
 
 class Request:
-    def __init__(self, request="Mon Jan 10 01:01:01 1970 [pid 22171] [lorenzo] OK DOWNLOAD: Client \"::ffff:0.0.0.0\", \"/\", 0 bytes, 0.0Kbyte/sec"):
+    def __init__(self, req=['Mon', 'Jan', '1', '00:00:00', '1970', '1', '::ffff:0.0.0.0', '0', '/', 'b', '_', 'o', 'r', 'l', 'ftp', '0', '*', 'c']):
         # First splitting of the log string. OUTPUT => ["date + pid, user, ...", "client's ip", "empty", "empty", "requested file path", "bytes", "transfer speed"]
-        req = request.split("\"")
-        self.file = req[3]  # file path requested from the client
-        self.host = self.parseIp(req[1]) # ip of the client
-        self.date = self.parseDate(req[0])  # date and hour when the request has been processed
+        self.file = req[8]  # file path requested from the client
+        self.host = self.parseIp(req[6]) # ip of the client
+        self.date = self.parseDate(req)  # date and hour when the request has been processed
         self.reqJson = self.getJson(self.file, self.host, self.date)
 
     # the date needs an elaboration to get a normal format (datetime)
     def parseDate(self, req):
-        # the output will be a list like this: ["day in words", "month in words", "empty", "day in number", "hh:mm:ss", "year", "other stuff like pid or username"]
-        req = req.split(" ")
-
         # here will be build a date in this format: year, month (in number), day (in number)
-        if req[2] == "":
-            date = [req[5], self.getMonth(req[1]), req[3]]
-        else:
-            date = [req[4], self.getMonth(req[1]), req[2]]
+        date = [req[4], self.getMonth(req[1]), req[2]]
 
         # here will be build an hour in this format: hh, mm, ss
-        if req[2] == "":
-            hour = req[4].split(":")
-        else:
-            hour = req[3].split(":")
+
+        hour = req[3].split(":")
         # converting date and hour from string to int
         date = list(map(int, date))
         hour = list(map(int, hour))
@@ -62,3 +53,4 @@ class Request:
 
     def getJson(self, filePath, hostIp, date):
         return {"filePath": filePath, "hostIp": hostIp, "date": date}
+
