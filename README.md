@@ -1,6 +1,6 @@
 # LogViewer
 
-### V1.0
+### v1.0
 Simply python script which read in real time a vsftpd log (default position */var/log/vsftpd.log*).
 
 A vsftpd log line has this format
@@ -15,3 +15,7 @@ This script will create from a log line like that a json like this:
 }
 
 This json will be uploaded in an influxDB measurement called request.
+
+
+### v1.1
+Now the script is able to parse vsftpd log written in standard ftpd xferlog format. The default location is also changed. Now is in /home/USER/Desktop/vsftpd/vsftpd.log
