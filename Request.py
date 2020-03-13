@@ -1,11 +1,14 @@
 import datetime
 import json
 
+
 class Request:
-    def __init__(self, req=['Mon', 'Jan', '1', '00:00:00', '1970', '1', '::ffff:0.0.0.0', '0', '/', 'b', '_', 'o', 'r', 'l', 'ftp', '0', '*', 'c']):
+    def __init__(self,
+                 req=['Mon', 'Jan', '1', '00:00:00', '1970', '1', '::ffff:0.0.0.0', '0', '/', 'b', '_', 'o', 'r', 'l',
+                      'ftp', '0', '*', 'c']):
         # First splitting of the log string. OUTPUT => ["date + pid, user, ...", "client's ip", "empty", "empty", "requested file path", "bytes", "transfer speed"]
         self.file = req[8]  # file path requested from the client
-        self.host = self.parseIp(req[6]) # ip of the client
+        self.host = self.parseIp(req[6])  # ip of the client
         self.date = self.parseDate(req)  # date and hour when the request has been processed
         self.reqJson = self.getJson(self.file, self.host, self.date)
 
@@ -53,4 +56,3 @@ class Request:
 
     def getJson(self, filePath, hostIp, date):
         return {"filePath": filePath, "hostIp": hostIp, "date": date}
-
