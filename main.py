@@ -1,25 +1,32 @@
-import Request
-import time
-import datetime
-from datetime import timedelta
-from influxdb import InfluxDBClient
-
-def updateDatabase(req):
-    client = InfluxDBClient(host='localhost', port='8086')
-    client.switch_database('firstDB')
-    query = "request hostIp=\"" + req.reqJson["hostIp"] + "\",filePath=\"" + req.reqJson["filePath"] + "\""
-    client.write([query], {'db': "firstDB"}, 204, 'line')
+import os, os.path
+import myThread
 
 
 def main():
     print("Script running and waiting for new entry")
-    file = open("/home/lorenzo/Desktop/vsftpd/vsftpd.log", "r")
-    fileLog = open("/home/lorenzo/PycharmProjects/LogViewer/LogViewer.log", "a")
-    fileLog.write("\n" + str(datetime.date.today()) + " - Starting the script\n")
 
-    oldRequest = Request.Request()
-    file.seek(0,2)
-    while 1:
+    DIR = '/home/lorenzo/Desktop/vsftpd/'
+    files = ([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])
+
+    threads = []
+
+    for fileName in files:
+        file = (open((DIR + str(fileName)), "r"))
+        threads.append(myThread.myThread(fileName, file))
+
+    for thread in threads:
+        thread.start()
+
+
+
+
+
+
+if __name__ == "__main__":
+    main()
+
+    """
+        while 1:
         where = file.tell()
         line = file.readline()
         if not line:
@@ -30,12 +37,11 @@ def main():
             line = line.split(" ")
             if "c" == str(line[len(line) - 1]) or line[len(line) - 1] == "c\n":
                 request = Request.Request(line)
-                if request.reqJson["filePath"] != oldRequest.reqJson["filePath"] or request.reqJson["date"] > (oldRequest.reqJson["date"] + timedelta(seconds=10)):
+                if request.reqJson["filePath"] != oldRequest.reqJson["filePath"] or request.reqJson["date"] > (
+                        oldRequest.reqJson["date"] + timedelta(seconds=10)):
                     fileLog.write(str(datetime.datetime.now()) + " PARSED REQUEST: -" + str(request) + "\n")
                     print("PARSED REQUEST: " + str(request))
                     updateDatabase(request)
                     oldRequest = request
 
-
-if __name__ == "__main__":
-    main()
+    """
