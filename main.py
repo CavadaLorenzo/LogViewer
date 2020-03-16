@@ -1,5 +1,6 @@
-import os, os.path
-import myThread
+import os
+import os.path
+from reader_thread import Reader
 
 
 def main():
@@ -12,7 +13,7 @@ def main():
 
     for fileName in files:
         file = (open((DIR + str(fileName)), "r"))
-        threads.append(myThread.myThread(fileName, file))
+        threads.append(Reader(fileName, file))
 
     for thread in threads:
         thread.start()

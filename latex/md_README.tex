@@ -1,0 +1,12 @@
+\hypertarget{md_README_autotoc_md1}{}\doxysubsection{v1.\+0}\label{md_README_autotoc_md1}
+Simply python script which read in real time a vsftpd log (default position $\ast$/var/log/vsftpd.log$\ast$).
+
+A vsftpd log line has this format
+
+Tue Mar 10 15\+:25\+:21 2020 \mbox{[}pid 3595\mbox{]} \mbox{[}lorenzo\mbox{]} OK D\+O\+W\+N\+L\+O\+AD\+: Client \char`\"{}\+::ffff\+:10.\+3.\+10.\+155\char`\"{}, \char`\"{}/media/\+Zombieland Doppio colpo 2019 Blu\+Ray 1080x\+H264 Ita Eng Ac3 5.\+1 Sub Ita Eng/\+Zombieland Doppio colpo 2019 Blu\+Ray 1080x\+H264 Ita Eng Ac3 5.\+1 Sub Ita Eng.\+mkv\char`\"{}, 131072 bytes, 74159.\+91\+Kbyte/sec
+
+This script will create from a log line like that a json like this\+: \{ \char`\"{}date\char`\"{}\+: \char`\"{}2020-\/03-\/11 15\+:27\+:02\char`\"{}, \char`\"{}file\+Path\char`\"{}\+: \char`\"{}/music/\+Download/\+Marshmello  Anne-\/\+Marie -\/ F\+R\+I\+E\+N\+D\+S (\+Lyric Video).\+mp3\char`\"{}, \char`\"{}host\+Ip\char`\"{}\+: \char`\"{}\+::ffff\+:10.\+3.\+10.\+155\char`\"{} \}
+
+This json will be uploaded in an influx\+DB measurement called request.\hypertarget{md_README_autotoc_md2}{}\doxysubsection{v1.\+1}\label{md_README_autotoc_md2}
+Now the script is able to parse vsftpd log written in standard ftpd xferlog format. The default location is also changed. Now is in /home/\+U\+S\+E\+R/\+Desktop/vsftpd/vsftpd.log\hypertarget{md_README_autotoc_md3}{}\doxysubsection{v2.\+0}\label{md_README_autotoc_md3}
+Now the script can read form N files stored in the same directory. It will create a thread for each file for real-\/time reading 

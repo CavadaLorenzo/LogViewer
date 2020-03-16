@@ -1,0 +1,68 @@
+\hypertarget{classreader__thread_1_1Reader}{}\doxysection{reader\+\_\+thread.\+Reader Class Reference}
+\label{classreader__thread_1_1Reader}\index{reader\_thread.Reader@{reader\_thread.Reader}}
+Inheritance diagram for reader\+\_\+thread.\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreader__thread_1_1Reader}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classreader__thread_1_1Reader_a81ae8debea3697456ae84b58bd643b52}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, file)
+\item 
+def \mbox{\hyperlink{classreader__thread_1_1Reader_a1515866339e6d6609bc73a7f491acb5a}{run}} (self)
+\item 
+def \mbox{\hyperlink{classreader__thread_1_1Reader_a62225d82e63166be6bed24a57f571260}{parse\+New\+Line}} (self, line, old\+\_\+request)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classreader__thread_1_1Reader_a40531117d5bfb671f505bdcd914dce7e}\label{classreader__thread_1_1Reader_a40531117d5bfb671f505bdcd914dce7e}} 
+{\bfseries name}
+\item 
+\mbox{\Hypertarget{classreader__thread_1_1Reader_a6defcad361e2f258ae0370738d57ea85}\label{classreader__thread_1_1Reader_a6defcad361e2f258ae0370738d57ea85}} 
+{\bfseries file}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classreader__thread_1_1Reader_a81ae8debea3697456ae84b58bd643b52}\label{classreader__thread_1_1Reader_a81ae8debea3697456ae84b58bd643b52}} 
+\index{reader\_thread.Reader@{reader\_thread.Reader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reader\_thread.Reader@{reader\_thread.Reader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def reader\+\_\+thread.\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{file }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This class will run the reading process from the log file.
+There are 3 attributes needed:
+-name: name of the vsftpd file log
+-file: file where the log are stored
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classreader__thread_1_1Reader_a62225d82e63166be6bed24a57f571260}\label{classreader__thread_1_1Reader_a62225d82e63166be6bed24a57f571260}} 
+\index{reader\_thread.Reader@{reader\_thread.Reader}!parseNewLine@{parseNewLine}}
+\index{parseNewLine@{parseNewLine}!reader\_thread.Reader@{reader\_thread.Reader}}
+\doxysubsubsection{\texorpdfstring{parseNewLine()}{parseNewLine()}}
+{\footnotesize\ttfamily def reader\+\_\+thread.\+Reader.\+parse\+New\+Line (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{line,  }\item[{}]{old\+\_\+request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method will parse the request, create an object Request and add the new request to the database if is a new
+one.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classreader__thread_1_1Reader_a1515866339e6d6609bc73a7f491acb5a}\label{classreader__thread_1_1Reader_a1515866339e6d6609bc73a7f491acb5a}} 
+\index{reader\_thread.Reader@{reader\_thread.Reader}!run@{run}}
+\index{run@{run}!reader\_thread.Reader@{reader\_thread.Reader}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def reader\+\_\+thread.\+Reader.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method consist in a while True which will constantly check the log file to see if there is new entry.
+If not the thread will sleep for 3 seconds, although it will parse the request.
+Is possible that Kodi will do more than 1 request for the same file. To prevent that the script will save the
+same request more than once, the last request is saved and is compered with the new onw
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+reader\+\_\+thread.\+py\end{DoxyCompactItemize}

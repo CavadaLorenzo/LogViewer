@@ -1,0 +1,80 @@
+\hypertarget{classRequest_1_1Request}{}\doxysection{Request.\+Request Class Reference}
+\label{classRequest_1_1Request}\index{Request.Request@{Request.Request}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classRequest_1_1Request_ab5ae046d17a4cc15f10762a38f73b22a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, req=\mbox{[}\textquotesingle{}Mon\textquotesingle{}, \textquotesingle{}Jan\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}00\+:00\+:00\textquotesingle{}, \textquotesingle{}1970\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}\+::ffff\+:0.\+0.\+0.\+0\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}/\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}\+\_\+\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}ftp\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{} $\ast$\textquotesingle{}, \textquotesingle{}c\textquotesingle{}\mbox{]})
+\item 
+def \mbox{\hyperlink{classRequest_1_1Request_ae5d0de50c7abd1ffc59049795d82894e}{parse\+Date}} (self, req\+\_\+date)
+\item 
+def \mbox{\hyperlink{classRequest_1_1Request_a577bda258474e4a5a9181958f734c426}{parse\+Ip}} (self, host\+Ip)
+\item 
+\mbox{\Hypertarget{classRequest_1_1Request_adcc244e9e0dac059feaa23855fe6cbf4}\label{classRequest_1_1Request_adcc244e9e0dac059feaa23855fe6cbf4}} 
+def {\bfseries get\+Month} (self, i)
+\item 
+def \mbox{\hyperlink{classRequest_1_1Request_ab592146e2d766e462d18ea551cb1b2ee}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRequest_1_1Request_a7f9f49f3e600b2e7a14ad2e3b583dab2}\label{classRequest_1_1Request_a7f9f49f3e600b2e7a14ad2e3b583dab2}} 
+{\bfseries file}
+\item 
+\mbox{\Hypertarget{classRequest_1_1Request_a9566710bf23671808be01f9ea9ac2e2b}\label{classRequest_1_1Request_a9566710bf23671808be01f9ea9ac2e2b}} 
+{\bfseries host}
+\item 
+\mbox{\Hypertarget{classRequest_1_1Request_af292c307ba531aa07fe8d1249b541412}\label{classRequest_1_1Request_af292c307ba531aa07fe8d1249b541412}} 
+{\bfseries date}
+\item 
+\mbox{\Hypertarget{classRequest_1_1Request_a4c57e19adf84a5e2cdc259ddc9642f06}\label{classRequest_1_1Request_a4c57e19adf84a5e2cdc259ddc9642f06}} 
+{\bfseries req\+Json}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRequest_1_1Request_ab5ae046d17a4cc15f10762a38f73b22a}\label{classRequest_1_1Request_ab5ae046d17a4cc15f10762a38f73b22a}} 
+\index{Request.Request@{Request.Request}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Request.Request@{Request.Request}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Request.\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req = {\ttfamily \mbox{[}\textquotesingle{}Mon\textquotesingle{},~\textquotesingle{}Jan\textquotesingle{},~\textquotesingle{}1\textquotesingle{},~\textquotesingle{}00\+:00\+:00\textquotesingle{},~\textquotesingle{}1970\textquotesingle{},~\textquotesingle{}1\textquotesingle{},~\textquotesingle{}\+:\+:ffff\+:0.0.0.0\textquotesingle{},~\textquotesingle{}0\textquotesingle{},~\textquotesingle{}/\textquotesingle{},~\textquotesingle{}b\textquotesingle{},~\textquotesingle{}\+\_\+\textquotesingle{},~\textquotesingle{}o\textquotesingle{},~\textquotesingle{}r\textquotesingle{},~\textquotesingle{}l\textquotesingle{},~\textquotesingle{}ftp\textquotesingle{},~\textquotesingle{}0\textquotesingle{},~\textquotesingle{}$\ast$\textquotesingle{},~\textquotesingle{}c\textquotesingle{}\mbox{]}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Expected a req like the default one
+
+There are 4 attributes:
+- file: which represents the requested file
+- host: which represents the IP of the client
+- date: which represents the date when the request was made
+- reqJson: which is a JSON with all this three information stored
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRequest_1_1Request_ab592146e2d766e462d18ea551cb1b2ee}\label{classRequest_1_1Request_ab592146e2d766e462d18ea551cb1b2ee}} 
+\index{Request.Request@{Request.Request}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!Request.Request@{Request.Request}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def Request.\+Request.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}toString in JSON format
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classRequest_1_1Request_ae5d0de50c7abd1ffc59049795d82894e}\label{classRequest_1_1Request_ae5d0de50c7abd1ffc59049795d82894e}} 
+\index{Request.Request@{Request.Request}!parseDate@{parseDate}}
+\index{parseDate@{parseDate}!Request.Request@{Request.Request}}
+\doxysubsubsection{\texorpdfstring{parseDate()}{parseDate()}}
+{\footnotesize\ttfamily def Request.\+Request.\+parse\+Date (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req\+\_\+date }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method will elaborate the req_date an will return a normal date format (datetime)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classRequest_1_1Request_a577bda258474e4a5a9181958f734c426}\label{classRequest_1_1Request_a577bda258474e4a5a9181958f734c426}} 
+\index{Request.Request@{Request.Request}!parseIp@{parseIp}}
+\index{parseIp@{parseIp}!Request.Request@{Request.Request}}
+\doxysubsubsection{\texorpdfstring{parseIp()}{parseIp()}}
+{\footnotesize\ttfamily def Request.\+Request.\+parse\+Ip (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{host\+Ip }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method will get an Ip in the format ffff::0.0.0.0 and will return a normal ip (ex. 0.0.0.0)
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Request.\+py\end{DoxyCompactItemize}
