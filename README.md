@@ -19,3 +19,7 @@ This json will be uploaded in an influxDB measurement called request.
 
 ### v1.1
 Now the script is able to parse vsftpd log written in standard ftpd xferlog format. The default location is also changed. Now is in /home/USER/Desktop/vsftpd/vsftpd.log
+
+
+### v2.0
+Now the script can read form N files stored in the same directory. It will create a thread for each file for real-time reading
