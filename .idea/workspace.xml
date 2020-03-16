@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ff0d129-b1fe-4724-8bd9-9d89e7dffbe9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Request.py" beforeDir="false" afterPath="$PROJECT_DIR$/Request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/myThread.py" afterDir="false" />
-    </list>
+    <list default="true" id="2ff0d129-b1fe-4724-8bd9-9d89e7dffbe9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,11 +129,11 @@
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="329" y="160" width="1022" height="737" key="SettingsEditor/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1583845297058" />
-    <state x="616" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1584092051249">
+    <state x="616" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1584269562805">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="496" y="352" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1584026479079" />
-    <state x="616" y="362" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584092051249" />
+    <state x="616" y="362" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584269562805" />
     <state x="608" y="445" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583935671147">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
