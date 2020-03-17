@@ -2,117 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ff0d129-b1fe-4724-8bd9-9d89e7dffbe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/annotated.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/bc_s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/bdwn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classRequest_1_1Request-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classRequest_1_1Request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classdatabase_1_1Database-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classdatabase_1_1Database.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classmyThread_1_1myThread-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classmyThread_1_1myThread.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classmyThread_1_1myThread.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classreader__thread_1_1Reader-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classreader__thread_1_1Reader.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classreader__thread_1_1Reader.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classrequest_1_1Request-members.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/classrequest_1_1Request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/closed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/doc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/doxygen.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/doxygen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/dynsections.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/folderclosed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/folderopen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/functions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/functions_func.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/hierarchy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/md_README.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/menudata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/namespaceRequest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/namespaces.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/nav_f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/nav_g.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/nav_h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/open.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/pages.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/all_6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/classes_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/classes_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/classes_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/classes_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/functions_4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/mag_sel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/namespaces_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/namespaces_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/nomatches.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/pages_0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/pages_0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/search.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/search_l.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/search_m.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/search_r.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/search/searchdata.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/splitbar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/sync_off.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/sync_on.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/tab_a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/tab_b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/tab_h.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/tab_s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/html/tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/annotated.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/classRequest_1_1Request.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/classdatabase_1_1Database.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/classmyThread_1_1myThread.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/classmyThread_1_1myThread.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/classreader__thread_1_1Reader.eps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/classreader__thread_1_1Reader.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/classrequest_1_1Request.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/doxygen.sty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/hierarchy.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/longtable_doxygen.sty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/md_README.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/namespaceRequest.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/namespaces.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/refman.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/latex/tabu_doxygen.sty" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Request.py" beforeDir="false" afterPath="$PROJECT_DIR$/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myThread.py" beforeDir="false" afterPath="$PROJECT_DIR$/reader_thread.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,34 +90,34 @@
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="623" y="283" width="424" height="491" key="FileChooserDialogImpl/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1584012093609" />
-    <state width="1850" height="161" key="GridCell.Tab.0.bottom" timestamp="1584367811447">
+    <state width="1850" height="161" key="GridCell.Tab.0.bottom" timestamp="1584383623000">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="1657" height="269" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1584026828062" />
     <state width="1827" height="274" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1583763329645" />
     <state width="1827" height="269" key="GridCell.Tab.0.bottom/1680.0.1920.1080/70.27.1610.1023@70.27.1610.1023" timestamp="1584028664649" />
-    <state width="1850" height="161" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1584367811447" />
-    <state width="1850" height="161" key="GridCell.Tab.0.center" timestamp="1584367811446">
+    <state width="1850" height="161" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1584383623000" />
+    <state width="1850" height="161" key="GridCell.Tab.0.center" timestamp="1584383623000">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="1657" height="269" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1584026828062" />
     <state width="1827" height="274" key="GridCell.Tab.0.center/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1583763329644" />
     <state width="1827" height="269" key="GridCell.Tab.0.center/1680.0.1920.1080/70.27.1610.1023@70.27.1610.1023" timestamp="1584028664649" />
-    <state width="1850" height="161" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1584367811446" />
-    <state width="1850" height="161" key="GridCell.Tab.0.left" timestamp="1584367811445">
+    <state width="1850" height="161" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1584383623000" />
+    <state width="1850" height="161" key="GridCell.Tab.0.left" timestamp="1584383622999">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="1657" height="269" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1584026828062" />
     <state width="1827" height="274" key="GridCell.Tab.0.left/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1583763329644" />
     <state width="1827" height="269" key="GridCell.Tab.0.left/1680.0.1920.1080/70.27.1610.1023@70.27.1610.1023" timestamp="1584028664649" />
-    <state width="1850" height="161" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1584367811445" />
-    <state width="1850" height="161" key="GridCell.Tab.0.right" timestamp="1584367811446">
+    <state width="1850" height="161" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1584383622999" />
+    <state width="1850" height="161" key="GridCell.Tab.0.right" timestamp="1584383623000">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state width="1657" height="269" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1584026828062" />
     <state width="1827" height="274" key="GridCell.Tab.0.right/1680.0.1920.1080/0.27.1680.1023@1680.0.1920.1080" timestamp="1583763329644" />
     <state width="1827" height="269" key="GridCell.Tab.0.right/1680.0.1920.1080/70.27.1610.1023@70.27.1610.1023" timestamp="1584028664649" />
-    <state width="1850" height="161" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1584367811446" />
+    <state width="1850" height="161" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1584383623000" />
     <state width="1657" height="339" key="GridCell.Tab.1.bottom" timestamp="1584025327779">
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
@@ -248,11 +138,11 @@
       <screen x="0" y="27" width="1680" height="1023" />
     </state>
     <state x="329" y="160" width="1022" height="737" key="SettingsEditor/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1583845297058" />
-    <state x="616" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1584355876220">
+    <state x="616" y="362" key="com.intellij.ide.util.TipDialog" timestamp="1584432880274">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="496" y="352" key="com.intellij.ide.util.TipDialog/1680.0.1920.1080/0.27.1680.1023@0.27.1680.1023" timestamp="1584026479079" />
-    <state x="616" y="362" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584355876220" />
+    <state x="616" y="362" key="com.intellij.ide.util.TipDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1584432880274" />
     <state x="740" y="457" width="454" height="167" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584349022162">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
