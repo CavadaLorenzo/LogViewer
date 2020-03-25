@@ -3,16 +3,35 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{classdatabase_1_1Database_a7d1e994ed42e45ca4ec7ee0ce2d2249b}{update\+\_\+database}} (self, req)
+def \mbox{\hyperlink{classdatabase_1_1Database_af9768bf7bfba4c0bbd3b960adab74d0c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classdatabase_1_1Database_ae535d9a18deb56a7892a6989595ad768}{update\+\_\+database}} (self, name, req)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdatabase_1_1Database_a8630828658cc8599a58c178564a1c58e}\label{classdatabase_1_1Database_a8630828658cc8599a58c178564a1c58e}} 
+{\bfseries db}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdatabase_1_1Database_af9768bf7bfba4c0bbd3b960adab74d0c}\label{classdatabase_1_1Database_af9768bf7bfba4c0bbd3b960adab74d0c}} 
+\index{database.Database@{database.Database}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!database.Database@{database.Database}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def database.\+Database.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an object Database which connect to the default database: firstDB
+\end{DoxyVerb}
+ 
+
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classdatabase_1_1Database_a7d1e994ed42e45ca4ec7ee0ce2d2249b}\label{classdatabase_1_1Database_a7d1e994ed42e45ca4ec7ee0ce2d2249b}} 
+\mbox{\Hypertarget{classdatabase_1_1Database_ae535d9a18deb56a7892a6989595ad768}\label{classdatabase_1_1Database_ae535d9a18deb56a7892a6989595ad768}} 
 \index{database.Database@{database.Database}!update\_database@{update\_database}}
 \index{update\_database@{update\_database}!database.Database@{database.Database}}
 \doxysubsubsection{\texorpdfstring{update\_database()}{update\_database()}}
-{\footnotesize\ttfamily def database.\+Database.\+update\+\_\+database (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily def database.\+Database.\+update\+\_\+database (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{req }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}This method will store the request into a InfluxDB database.
 The entry will have this format:

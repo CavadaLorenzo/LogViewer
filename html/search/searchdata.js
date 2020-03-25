@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "_dglpru",
+  0: "_cdlpru",
   1: "dr",
-  2: "_gpru",
+  2: "_cpru",
   3: "l"
 };
 

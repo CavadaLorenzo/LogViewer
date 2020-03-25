@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getmonth_17',['getMonth',['../classrequest_1_1Request.html#aa5bb76039a78eb994888d7e784fc0ea6',1,'request::Request']]]
+  ['check_5flog_5ftype_20',['check_log_type',['../classreader__thread_1_1Reader.html#af7c1fa6769c40fab07cd81ec5f009c55',1,'reader_thread::Reader']]]
 ];

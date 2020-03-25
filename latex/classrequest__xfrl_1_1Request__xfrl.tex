@@ -1,0 +1,63 @@
+\hypertarget{classrequest__xfrl_1_1Request__xfrl}{}\doxysection{request\+\_\+xfrl.\+Request\+\_\+xfrl Class Reference}
+\label{classrequest__xfrl_1_1Request__xfrl}\index{request\_xfrl.Request\_xfrl@{request\_xfrl.Request\_xfrl}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classrequest__xfrl_1_1Request__xfrl_a93a5bc17f1518177583300d2cde758f4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, req=\mbox{[}\textquotesingle{}Mon\textquotesingle{}, \textquotesingle{}Jan\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}00\+:00\+:00\textquotesingle{}, \textquotesingle{}1970\textquotesingle{}, \textquotesingle{}1\textquotesingle{}, \textquotesingle{}0.\+0.\+0.\+0\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{}/\textquotesingle{}, \textquotesingle{}b\textquotesingle{}, \textquotesingle{}\+\_\+\textquotesingle{}, \textquotesingle{}o\textquotesingle{}, \textquotesingle{}r\textquotesingle{}, \textquotesingle{}l\textquotesingle{}, \textquotesingle{}ftp\textquotesingle{}, \textquotesingle{}0\textquotesingle{}, \textquotesingle{} $\ast$\textquotesingle{}, \textquotesingle{}c\textquotesingle{}\mbox{]})
+\item 
+def \mbox{\hyperlink{classrequest__xfrl_1_1Request__xfrl_a7e17d9ad960e1aa3ce240b8a6d0726d1}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrequest__xfrl_1_1Request__xfrl_a4323e82d72144d2a548b0095abf99253}\label{classrequest__xfrl_1_1Request__xfrl_a4323e82d72144d2a548b0095abf99253}} 
+{\bfseries file}
+\item 
+\mbox{\Hypertarget{classrequest__xfrl_1_1Request__xfrl_a6d338a9ac4097449f113407dd8a17bf4}\label{classrequest__xfrl_1_1Request__xfrl_a6d338a9ac4097449f113407dd8a17bf4}} 
+{\bfseries host}
+\item 
+\mbox{\Hypertarget{classrequest__xfrl_1_1Request__xfrl_a9c88d1e7b472252435b8f8588dc8eabb}\label{classrequest__xfrl_1_1Request__xfrl_a9c88d1e7b472252435b8f8588dc8eabb}} 
+{\bfseries date}
+\item 
+\mbox{\Hypertarget{classrequest__xfrl_1_1Request__xfrl_aaf6da272a379915ccd88b49b7e529f06}\label{classrequest__xfrl_1_1Request__xfrl_aaf6da272a379915ccd88b49b7e529f06}} 
+{\bfseries username}
+\item 
+\mbox{\Hypertarget{classrequest__xfrl_1_1Request__xfrl_a72307d9aae832fca6f87b14c64c3c8d7}\label{classrequest__xfrl_1_1Request__xfrl_a72307d9aae832fca6f87b14c64c3c8d7}} 
+{\bfseries req\+\_\+json}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrequest__xfrl_1_1Request__xfrl_a93a5bc17f1518177583300d2cde758f4}\label{classrequest__xfrl_1_1Request__xfrl_a93a5bc17f1518177583300d2cde758f4}} 
+\index{request\_xfrl.Request\_xfrl@{request\_xfrl.Request\_xfrl}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!request\_xfrl.Request\_xfrl@{request\_xfrl.Request\_xfrl}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def request\+\_\+xfrl.\+Request\+\_\+xfrl.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req = {\ttfamily \mbox{[}\textquotesingle{}Mon\textquotesingle{},~\textquotesingle{}Jan\textquotesingle{},~\textquotesingle{}1\textquotesingle{},~\textquotesingle{}00\+:00\+:00\textquotesingle{},~\textquotesingle{}1970\textquotesingle{},~\textquotesingle{}1\textquotesingle{},~\textquotesingle{}0.0.0.0\textquotesingle{},~\textquotesingle{}0\textquotesingle{},~\textquotesingle{}/\textquotesingle{},~\textquotesingle{}b\textquotesingle{},~\textquotesingle{}\+\_\+\textquotesingle{},~\textquotesingle{}o\textquotesingle{},~\textquotesingle{}r\textquotesingle{},~\textquotesingle{}l\textquotesingle{},~\textquotesingle{}ftp\textquotesingle{},~\textquotesingle{}0\textquotesingle{},~\textquotesingle{}$\ast$\textquotesingle{},~\textquotesingle{}c\textquotesingle{}\mbox{]}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Expected a req like the default one
+From that some data will be extract. At the end there will be a Json with:
+data of the request, ip of the client, requested file, username of the client
+
+There are 5 attributes:
+- file: which represents the requested file
+- host: which represents the IP of the client
+- date: which represents the date when the request was made
+- username: which represents the username of the client
+- reqJson: which is a JSON with all this three information stored
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrequest__xfrl_1_1Request__xfrl_a7e17d9ad960e1aa3ce240b8a6d0726d1}\label{classrequest__xfrl_1_1Request__xfrl_a7e17d9ad960e1aa3ce240b8a6d0726d1}} 
+\index{request\_xfrl.Request\_xfrl@{request\_xfrl.Request\_xfrl}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!request\_xfrl.Request\_xfrl@{request\_xfrl.Request\_xfrl}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def request\+\_\+xfrl.\+Request\+\_\+xfrl.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}toString in JSON format
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+request\+\_\+xfrl.\+py\end{DoxyCompactItemize}
