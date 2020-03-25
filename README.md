@@ -23,3 +23,8 @@ Now the script is able to parse vsftpd log written in standard ftpd xferlog form
 
 ### v2.0
 Now the script can read form N files stored in the same directory. It will create a thread for each file for real-time reading
+
+
+### v3.0
+Now the script can read from N file, for each file it will detect if it is written in default mode or in xferlog standard mode. Now the script will also keep track of the username of the client who has done the request.
+
