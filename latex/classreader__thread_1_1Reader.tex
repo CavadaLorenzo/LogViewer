@@ -37,6 +37,14 @@ def \mbox{\hyperlink{classreader__thread_1_1Reader_af7c1fa6769c40fab07cd81ec5f00
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represent the file-reader of the system
+Attributes:
+    -name: name of the file, useful to identify to which server has been done a request
+    -file: represent the actual log file to read
+\end{DoxyVerb}
+ 
+
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classreader__thread_1_1Reader_a81ae8debea3697456ae84b58bd643b52}\label{classreader__thread_1_1Reader_a81ae8debea3697456ae84b58bd643b52}} 
 \index{reader\_thread.Reader@{reader\_thread.Reader}!\_\_init\_\_@{\_\_init\_\_}}
@@ -111,8 +119,8 @@ if is different from the previous one or if is pass at least 10 seconds from the
 \doxysubsubsection{\texorpdfstring{run()}{run()}}
 {\footnotesize\ttfamily def reader\+\_\+thread.\+Reader.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}Main method of the class, it will run the check of the type of the log file and then it will run the right
-request parser.
+\begin{DoxyVerb}Main method of the class, first of all it will run the check of the type of the log file
+and then it will run the right request parser.
 \end{DoxyVerb}
  
 

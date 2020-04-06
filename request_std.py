@@ -9,6 +9,7 @@ def get_json(filePath, hostIp, date, username):
            file_path: "/etc",
            host_ip: "0.0.0.0"
            date: "2020-03-16 14:07:13"
+           username: "Bob"
        }
     """
     return {"file_path": filePath, "host_ip": hostIp, "username": username, "date": date}

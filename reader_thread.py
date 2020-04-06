@@ -6,8 +6,22 @@ from datetime import timedelta
 from logger import update_log
 from database import Database
 
+r"""Thread which actually read and parse the line of the log file
+
+This class handle the thread which will read the line of the log file,
+it will parse each line getting only the useful information and will upload
+them to a common InfluxDB database.
+
+
+"""
 
 class Reader(threading.Thread):
+    """
+    Represent the file-reader of the system
+    Attributes:
+        -name: name of the file, useful to identify to which server has been done a request
+        -file: represent the actual log file to read
+    """
     def __init__(self, name, file):
         """
         This class will run the reading process from the log file.
@@ -22,8 +36,8 @@ class Reader(threading.Thread):
 
     def run(self):
         """
-        Main method of the class, it will run the check of the type of the log file and then it will run the right
-        request parser.
+        Main method of the class, first of all it will run the check of the type of the log file
+        and then it will run the right request parser.
         """
         print("Reading from: " + self.name)
         update_log(text="READING FROM FILE " + self.name + "\n")

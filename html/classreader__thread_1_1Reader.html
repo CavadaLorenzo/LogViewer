@@ -109,7 +109,12 @@ Public Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>file</b></td></tr>
 <tr class="separator:a6defcad361e2f258ae0370738d57ea85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><pre class="fragment">Represent the file-reader of the system
+Attributes:
+    -name: name of the file, useful to identify to which server has been done a request
+    -file: represent the actual log file to read
+</pre> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a81ae8debea3697456ae84b58bd643b52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81ae8debea3697456ae84b58bd643b52">&#9670;&nbsp;</a></span>__init__()</h2>
 
@@ -304,8 +309,8 @@ if is different from the previous one or if is pass at least 10 seconds from the
         </tr>
       </table>
 </div><div class="memdoc">
-<pre class="fragment">Main method of the class, it will run the check of the type of the log file and then it will run the right
-request parser.
+<pre class="fragment">Main method of the class, first of all it will run the check of the type of the log file
+and then it will run the right request parser.
 </pre> 
 </div>
 </div>
