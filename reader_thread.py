@@ -15,6 +15,7 @@ them to a common InfluxDB database.
 
 """
 
+
 class Reader(threading.Thread):
     """
     Represent the file-reader of the system
@@ -22,11 +23,12 @@ class Reader(threading.Thread):
         -name: name of the file, useful to identify to which server has been done a request
         -file: represent the actual log file to read
     """
+
     def __init__(self, name, file):
         """
         This class will run the reading process from the log file.
         There are 2 attributes needed:
-        -name: name of the vsftpd file log, used for identify the file
+        -name: unique identify of the logviewer instance
         -file: file object where the log are stored
         """
         self.db = Database()

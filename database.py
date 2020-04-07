@@ -1,5 +1,9 @@
 from influxdb import InfluxDBClient
+import os
 
+DB_IP = os.environ['DB_IP']
+DB_PORT = os.environ['DB_PORT']
+DB_NAME = os.environ['DB_NAME']
 
 class Database:
 
@@ -7,8 +11,8 @@ class Database:
         """
         Create an object Database which connect to the default database: firstDB
         """
-        self.db = InfluxDBClient(host='localhost', port='8086')
-        self.db.switch_database('firstDB')
+        self.db = InfluxDBClient(DB_IP, DB_PORT)
+        self.db.switch_database(DB_NAME)
 
     def update_database(self, name, req):
         """
@@ -17,6 +21,6 @@ class Database:
         time   hostIp   filePath   logName
         """
         query = "request host_ip=\"" + req.req_json["host_ip"] + "\",file_path=\"" + req.req_json[
-            "file_path"] + "\",log_name=\"" + name + "\"" + ",username=\"" + req.req_json["username"] + "\""
+            "file_path"] + "\",logviewer_id=\"" + name + "\"" + ",username=\"" + req.req_json["username"] + "\""
 
-        self.db.write([query], {'db': "firstDB"}, 204, 'line')
+        self.db.write([query], {'db': DB_NAME}, 204, 'line')

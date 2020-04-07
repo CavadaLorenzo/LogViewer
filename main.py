@@ -13,7 +13,8 @@ import os.path
 
 from reader_thread import Reader
 
-DIR = '/home/lorenzo/Desktop/vsftpd/'
+DIR = os.environ['LOG_DIR']
+ID = os.environ['ID']
 
 
 def create_thread():
@@ -30,7 +31,7 @@ def create_thread():
         for file_name in files:
             if file_name == "vsftpd.log":
                 file = (open((DIR + str(file_name)), "r"))
-                threads.append(Reader(file_name, file))
+                threads.append(Reader(ID, file))
                 control = False
 
     return threads
