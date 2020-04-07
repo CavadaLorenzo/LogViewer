@@ -10,23 +10,30 @@
 
 import os
 import os.path
+
 from reader_thread import Reader
 
 DIR = '/home/lorenzo/Desktop/vsftpd/'
 
 
-def create_thread(files):
+def create_thread():
     """
     This method will create and return an array of thread. Each thread regards a specific
     log file, the thread will read from the file in real time.
     Each file is identified by its name and the file itself.
     """
     threads = []
-    for file_name in files:
-        file = (open((DIR + str(file_name)), "r"))
-        threads.append(Reader(file_name, file))
-    return threads
 
+    control = True
+    while control:
+        files = ([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])
+        for file_name in files:
+            if file_name == "vsftpd.log":
+                file = (open((DIR + str(file_name)), "r"))
+                threads.append(Reader(file_name, file))
+                control = False
+
+    return threads
 
 def main():
     """
@@ -34,9 +41,7 @@ def main():
     """
     print("Script running and waiting for new entry")
 
-    files = ([name for name in os.listdir(DIR) if os.path.isfile(os.path.join(DIR, name))])
-
-    threads = create_thread(files)
+    threads = create_thread()
 
     for thread in threads:
         thread.start()

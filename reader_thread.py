@@ -128,6 +128,10 @@ class Reader(threading.Thread):
         other case
         """
         line = self.file.readline()
+        while line == "":
+            time.sleep(3)
+            line = self.file.readline()
+
         log_type = True
         if "CONNECT" in line or "OK LOGIN" in line or "OK UPLOAD" in line or "FAIL DOWNLOAD" in line or "OK DOWNLOAD" in line:
             log_type = False
